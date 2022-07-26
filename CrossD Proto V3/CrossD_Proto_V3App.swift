@@ -12,6 +12,7 @@ struct CrossD_Proto_V3App: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(ARViewController.shared)
         }
     }
 }

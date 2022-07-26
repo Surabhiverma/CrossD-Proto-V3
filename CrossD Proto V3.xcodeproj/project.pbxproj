@@ -11,6 +11,11 @@
 		76232B3B288CB50D001B9183 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76232B3A288CB50D001B9183 /* ContentView.swift */; };
 		76232B3D288CB510001B9183 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76232B3C288CB510001B9183 /* Assets.xcassets */; };
 		76232B40288CB510001B9183 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76232B3F288CB510001B9183 /* Preview Assets.xcassets */; };
+		76232B47288CBD41001B9183 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76232B46288CBD41001B9183 /* ARViewController.swift */; };
+		76232B4B288D636E001B9183 /* ImageDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76232B4A288D636C001B9183 /* ImageDetection.swift */; };
+		76232B55288DA1E3001B9183 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76232B54288DA1E3001B9183 /* Model.swift */; };
+		76232B57288EEAF4001B9183 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76232B56288EEAF4001B9183 /* Extensions.swift */; };
+		76232B5B288F02A9001B9183 /* iPhoneWithImage.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 76232B5A288F02A9001B9183 /* iPhoneWithImage.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		76232B3A288CB50D001B9183 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		76232B3C288CB510001B9183 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76232B3F288CB510001B9183 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		76232B46288CBD41001B9183 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		76232B4A288D636C001B9183 /* ImageDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetection.swift; sourceTree = "<group>"; };
+		76232B54288DA1E3001B9183 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		76232B56288EEAF4001B9183 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		76232B5A288F02A9001B9183 /* iPhoneWithImage.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = iPhoneWithImage.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +61,15 @@
 		76232B37288CB50D001B9183 /* CrossD Proto V3 */ = {
 			isa = PBXGroup;
 			children = (
+				76232B4F288D99B2001B9183 /* Model */,
 				76232B38288CB50D001B9183 /* CrossD_Proto_V3App.swift */,
 				76232B3A288CB50D001B9183 /* ContentView.swift */,
 				76232B3C288CB510001B9183 /* Assets.xcassets */,
 				76232B3E288CB510001B9183 /* Preview Content */,
+				76232B46288CBD41001B9183 /* ARViewController.swift */,
+				76232B4A288D636C001B9183 /* ImageDetection.swift */,
+				76232B54288DA1E3001B9183 /* Model.swift */,
+				76232B56288EEAF4001B9183 /* Extensions.swift */,
 			);
 			path = "CrossD Proto V3";
 			sourceTree = "<group>";
@@ -65,6 +80,14 @@
 				76232B3F288CB510001B9183 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		76232B4F288D99B2001B9183 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				76232B5A288F02A9001B9183 /* iPhoneWithImage.usdz */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76232B5B288F02A9001B9183 /* iPhoneWithImage.usdz in Resources */,
 				76232B40288CB510001B9183 /* Preview Assets.xcassets in Resources */,
 				76232B3D288CB510001B9183 /* Assets.xcassets in Resources */,
 			);
@@ -137,6 +161,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76232B55288DA1E3001B9183 /* Model.swift in Sources */,
+				76232B57288EEAF4001B9183 /* Extensions.swift in Sources */,
+				76232B47288CBD41001B9183 /* ARViewController.swift in Sources */,
+				76232B4B288D636E001B9183 /* ImageDetection.swift in Sources */,
 				76232B3B288CB50D001B9183 /* ContentView.swift in Sources */,
 				76232B39288CB50D001B9183 /* CrossD_Proto_V3App.swift in Sources */,
 			);
@@ -270,6 +298,7 @@
 				DEVELOPMENT_TEAM = BJG265D3V8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app is using Augmented Reality";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +328,7 @@
 				DEVELOPMENT_TEAM = BJG265D3V8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app is using Augmented Reality";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
